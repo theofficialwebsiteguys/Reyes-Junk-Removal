@@ -14,7 +14,7 @@ img {
 main {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 20px;
   align-items: center;
   padding: 25px;
 }
@@ -60,19 +60,25 @@ main {
   filter: grayscale(100%)
 }
 
-.image-before,
+.image-before{
+  content: url('../../assets/patio_before.jpg');
+}
 .image-after {
-  content: url('../../assets/patio.jpg');
+  content: url('../../assets/patio_after.jpg');
 }
 
-.image-before2,
+.image-before2{
+  content: url('../../assets/walkway_before_2.jpg');
+}
 .image-after2 {
-  content: url('../../assets/wall.jpg');
+  content: url('../../assets/walkway_after_2.jpg');
 }
 
-.image-before3,
+.image-before3{
+  content: url('../../assets/wall_before.jpg');
+}
 .image-after3 {
-  content: url('../../assets/path.jpg');
+  content: url('../../assets/wall_after.jpg');
 }
 
 .slider,
@@ -148,13 +154,27 @@ hr {
   width: 75%;
 }
 
-@media (max-width: 991px) {
+.feature-desc{
+  max-width: 800px;
+}
+
+.featurette-heading{
+  font-size: 48px;
+}
+
+.lead{
+  font-size: 22px;
+}
+
+@media (max-width: 1275px) {
   main{
     display: block;
   }
 
   .feature-desc{
     margin-top: 20px;
+    padding: 0 !important;
+    max-width: 600px;
   }
 
 }

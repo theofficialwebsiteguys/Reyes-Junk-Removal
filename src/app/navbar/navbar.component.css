@@ -59,6 +59,10 @@ nav.navbar {
 }
 
 @media (max-width: 991px) {
+
+    .navbar-collapse{
+        padding-bottom: 25px;
+    }
     #logo {
 
         /* Adjust for smaller screens */
@@ -77,5 +81,4 @@ nav.navbar {
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
-    padding-bottom: 25px;
 }

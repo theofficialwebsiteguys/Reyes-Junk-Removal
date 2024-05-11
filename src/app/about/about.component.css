@@ -32,10 +32,37 @@
   }
 
   .truck-image {
-    width: 500px;
-    height: 500px;
-    background-image: url('../../assets/gallery/trucks.jpg');
-    background-size: 500px 500px;
+    width: 100%; /* Make width responsive */
+    height: 0; /* Set height to 0 */
+    padding-top: 100%; /* Padding top as a percentage of the width to maintain aspect ratio */
+    background-image: url('../../assets/truck_plow.jpg');
+    background-size: cover; /* Ensures the background image covers the entire content area */
+    background-position: center; /* Center the image within the element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+  
+  /* Media query adjustments for better responsiveness */
+  @media (max-width: 1024px) {
+    .featurette {
+      display: block;
+    }
+    
+    .text, .image {
+      width: 100%; /* Full width for smaller screens */
+      padding: 0 15px; /* Adding some padding */
+      text-align: center; /* Center text for better readability on small devices */
+    }
+    
+    .truck-image {
+      height: auto; /* Auto height for natural aspect ratio */
+      padding-top: 56.25%; /* 16:9 aspect ratio, adjust as needed */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .truck-image {
+      padding-top: 75%; /* Adjust padding-top to maintain a good aspect ratio on very small screens */
+    }
   }
   
   /* Thin out the marketing headings */
@@ -44,30 +71,3 @@
     letter-spacing: -.05rem;
   }
   
-  @media (max-width: 1440px) {
-    .featurette{
-      padding: 50px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .featurette{
-      display: block;
-    }
-    
-    .text{
-      width: auto;
-    }
-
-    .image{
-      width: auto;
-      text-align: center;
-    }
-  }
-
-@media (max-width: 525px) {
-  .truck-image {
-    width: 300px;
-    height: 500px;
-  }
-}
