@@ -16,10 +16,10 @@
 
 
 .quotes-btn {
-  background-color: #fff507;
-  color: black;
+  background-color: #03619e;
   border: none;
   width: 250px;
+  color: white;
 }
 
 .text{
@@ -36,7 +36,7 @@
 } */
 
 .carousel-inner {
-  height: 550px;
+  height: 650px;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -54,17 +54,17 @@
 }
 
 .carousel-item:nth-child(1) {
-  background-image: url('../../assets/gallery/pic1.jpg');
+  background-image: url('../../assets/pic3.avif');
   height: 100%;
 }
 
 .carousel-item:nth-child(2) {
-  background-image: url('../../assets/gallery/pic3.jpg');
+  background-image: url('../../assets/pic2.jpg');
   height: 100%;
 }
 
 .carousel-item:nth-child(3) {
-  background-image: url('../../assets/gallery/pic2.jpg');
+  background-image: url('../../assets/pic3.avif');
   height: 100%;
 }
 

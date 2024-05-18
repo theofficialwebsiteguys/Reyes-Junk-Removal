@@ -60,25 +60,23 @@ main {
   filter: grayscale(100%)
 }
 
-.image-before{
-  content: url('../../assets/patio_before.jpg');
-}
+
 .image-after {
-  content: url('../../assets/patio_after.jpg');
+  content: url('../../assets/pic4.jpg');
 }
 
 .image-before2{
-  content: url('../../assets/walkway_before_2.jpg');
+
 }
 .image-after2 {
-  content: url('../../assets/walkway_after_2.jpg');
+  content: url('../../assets/pic5.jpg');
 }
 
 .image-before3{
-  content: url('../../assets/wall_before.jpg');
+
 }
 .image-after3 {
-  content: url('../../assets/wall_after.jpg');
+  content: url('../../assets/pic6.jpg');
 }
 
 .slider,
