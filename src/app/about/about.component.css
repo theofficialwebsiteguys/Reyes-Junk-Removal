@@ -35,7 +35,6 @@
     width: 100%; /* Make width responsive */
     height: 0; /* Set height to 0 */
     padding-top: 100%; /* Padding top as a percentage of the width to maintain aspect ratio */
-    /* background-image: url('../../assets/Asad_portrait.PNG'); */
     background-size: cover; /* Ensures the background image covers the entire content area */
     background-position: center; /* Center the image within the element */
     background-repeat: no-repeat; /* Prevent the image from repeating */
