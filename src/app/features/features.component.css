@@ -36,11 +36,6 @@ main {
   /* Adjust this value as needed */
 }
 
-.image-container,
-.image-container2,
-.image-container3 {
-
-}
 
 .slider-image,
 .slider-image2,
@@ -60,24 +55,27 @@ main {
   filter: grayscale(100%)
 }
 
-
+.image-before{
+  content: url('../../assets/before_1.png');
+}
 .image-after {
-  content: url('../../assets/pic4.jpg');
+  content: url('../../assets/after_1.png');
 }
 
 .image-before2{
-
+  content: url('../../assets/before_2.png');
 }
 .image-after2 {
-  content: url('../../assets/pic5.jpg');
+  content: url('../../assets/after_2.png');
 }
 
-.image-before3{
 
+/* .image-before3{
+  content: url('../../assets/wall_before.jpg');
 }
 .image-after3 {
-  content: url('../../assets/pic6.jpg');
-}
+  content: url('../../assets/wall_after.jpg');
+} */
 
 .slider,
 .slider2,
@@ -164,10 +162,9 @@ hr {
   font-size: 22px;
 }
 
+
+
 @media (max-width: 1275px) {
-  main{
-    display: block;
-  }
 
   .feature-desc{
     margin-top: 20px;

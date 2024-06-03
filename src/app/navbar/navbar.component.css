@@ -10,7 +10,7 @@
     /* Center align the logo horizontally */
     z-index: 15;
     /* Higher than the navbar to stay on top of the content below */
-    content: url('../../assets/logo.png');
+    content: url('../../assets/reyes-logo.png');
 }
 
 .logo-container {
