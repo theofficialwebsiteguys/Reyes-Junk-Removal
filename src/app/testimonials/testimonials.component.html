@@ -1,24 +1,40 @@
-@if (users) {
 <div id="background">
     <div class="trans-background">
         <h1 id="heading">Here's what our satisfied customers are saying...</h1>
         <ngb-carousel>
-            <ng-template ngbSlide *ngFor="let group of chunkedUsers">
+            <ng-template ngbSlide>
                 <div class="container mt-5 mb-5">
                     <div class="row g-2">
-                        <div class="col-md-4" *ngFor="let user of group">
+                        <div class="col-md-12">
                             <div class="card p-3 text-center px-4">
                                 <div class="card-container">
-                                    <div class="user-image">
-                                        <img [src]="user.image" class="rounded-circle" width="80">
-                                    </div>
-                                    <div class="user-content">
-                                        <h5 class="mb-0">{{ user.name }}</h5>
-                                        <p>{{ user.description }}</p>
-                                    </div>
-                                    <div class="ratings">
-                                        <i class="fa fa-star" *ngFor="let star of [].constructor(user.rating); let i = index"></i>
-                                      </div>
+                                    <img src="assets/review1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="container mt-5 mb-5">
+                    <div class="row g-2">
+                        <div class="col-md-12">
+                            <div class="card p-3 text-center px-4">
+                                <div class="card-container">
+                                    <img src="assets/review2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="container mt-5 mb-5">
+                    <div class="row g-2">
+                        <div class="col-md-12">
+                            <div class="card p-3 text-center px-4">
+                                <div class="card-container">
+                                    <img src="assets/review3.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -28,4 +44,3 @@
         </ngb-carousel>
     </div>
 </div>
-}

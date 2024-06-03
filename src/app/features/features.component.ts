@@ -30,11 +30,11 @@ export class FeaturesComponent implements OnInit {
       container2.style.setProperty('--position', `${target.value}%`);
     });
 
-    const container3 = document.querySelector('.container3') as HTMLElement;
-    const slider3 = document.querySelector('.slider3') as HTMLInputElement;
-    slider3.addEventListener('input', (e) => {
-      const target = e.target as HTMLInputElement;
-      container3.style.setProperty('--position', `${target.value}%`);
-    });
+    // const container3 = document.querySelector('.container3') as HTMLElement;
+    // const slider3 = document.querySelector('.slider3') as HTMLInputElement;
+    // slider3.addEventListener('input', (e) => {
+    //   const target = e.target as HTMLInputElement;
+    //   container3.style.setProperty('--position', `${target.value}%`);
+    // });
   }
 }

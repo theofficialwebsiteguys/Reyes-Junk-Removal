@@ -20,6 +20,9 @@ main {
 }
 
 .main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row-reverse;
 }
 
@@ -32,10 +35,9 @@ main {
   overflow: hidden;
   border-radius: 1rem;
   --position: 50%;
-  max-width: 600px;
-  /* Adjust this value as needed */
+  width: 400px; /* Set width to 400px */
+  height: 400px; /* Set height to 400px */
 }
-
 
 .slider-image,
 .slider-image2,
@@ -44,6 +46,8 @@ main {
   height: 100%;
   object-fit: cover;
   object-position: left;
+  width: 400px; /* Set width to 400px */
+  height: 400px; /* Set height to 400px */
 }
 
 .image-before,
@@ -52,30 +56,29 @@ main {
   position: absolute;
   inset: 0;
   width: var(--position);
-  filter: grayscale(100%)
+  height: 100%;
+  filter: grayscale(100%);
 }
 
-.image-before{
+.image-before {
   content: url('../../assets/before_1.png');
 }
+
 .image-after {
   content: url('../../assets/after_1.png');
 }
 
-.image-before2{
+.image-before2 {
   content: url('../../assets/before_2.png');
 }
+
 .image-after2 {
   content: url('../../assets/after_2.png');
 }
 
-
-/* .image-before3{
-  content: url('../../assets/wall_before.jpg');
-}
 .image-after3 {
-  content: url('../../assets/wall_after.jpg');
-} */
+  content: url('../../assets/junk-van.png');
+}
 
 .slider,
 .slider2,
@@ -130,7 +133,7 @@ main {
 
 .col-md-1 {
   width: 500px;
-  margin-left: 100px
+  margin-left: 100px;
 }
 
 .col2 {
@@ -150,26 +153,28 @@ hr {
   width: 75%;
 }
 
-.feature-desc{
+.feature-desc {
   max-width: 800px;
 }
 
-.featurette-heading{
+.featurette-heading {
   font-size: 48px;
 }
 
-.lead{
+.lead {
   font-size: 22px;
 }
 
-
-
 @media (max-width: 1275px) {
-
-  .feature-desc{
+  .feature-desc {
     margin-top: 20px;
     padding: 0 !important;
     max-width: 600px;
   }
+}
 
+@media (max-width: 768px) {
+  .main, .main2 {
+    flex-direction: column;
+  }
 }

@@ -1,21 +1,13 @@
 #logo {
     height: 100px;
-    /* Adjust height as needed */
     position: absolute;
     bottom: -50px;
-    /* Half of the logo's height to hang off the bottom */
-   
-    /* Center the logo */
-
-    /* Center align the logo horizontally */
     z-index: 15;
-    /* Higher than the navbar to stay on top of the content below */
     content: url('../../assets/reyes-logo.png');
 }
 
 .logo-container {
     padding-top: 30px;
-    /* Adjust this value as needed */
 }
 
 .contact-btn {
@@ -26,17 +18,31 @@
 .navbar-expand-lg .navbar-nav {
     display: flex;
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
+}
+
+h3 {
+    margin: 0;
 }
 
 @media (max-width: 991px) {
     .navbar-expand-lg .navbar-nav {
-        justify-content: initial;
+        justify-content: flex-start;
         height: fit-content;
     }
 
     .contact-btn {
         margin-bottom: 25px;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 2em;
+        width: 100%;
     }
 }
 
@@ -44,7 +50,7 @@
     padding-left: 10px;
 }
 
-.nav-link{
+.nav-link {
     cursor: pointer;
 }
 
@@ -55,30 +61,22 @@ nav {
 nav.navbar {
     position: relative;
     z-index: 10;
-    /* Ensures navbar stays on top */
 }
-
-@media (max-width: 991px) {
-
-    .navbar-collapse{
-        padding-bottom: 25px;
-    }
-    #logo {
-
-        /* Adjust for smaller screens */
-        
-        /* Smaller logo on smaller screens */
-    }
-
-    .logo-container {
-        padding-top: 30px;
-        /* Adjust this value as needed */
-    }
-}
-
 
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding-bottom: 25px;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 2em;
+        width: 100%;
+    }
 }

@@ -41,8 +41,14 @@
 }
 
 @media (max-width: 554px) {
-    .emailLink{
+    .instagram-facebook{
         display: none;
+    }
+    .phoneLink{
+        display: none;
+    }
+    .email{
+        margin: auto;
     }
     .split{
         display: none;

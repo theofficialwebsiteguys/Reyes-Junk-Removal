@@ -5,8 +5,8 @@
     height: 100%;
 }
 
-.col-md-4 {
-    width: 50%
+.col-md-12 {
+    width: 100%;
 }
 
 .mb-5 {
@@ -19,7 +19,6 @@
 }
 
 .carousel-control-next {
-    /* right: 0; */
     right: -25px !important;
 }
 
@@ -44,34 +43,44 @@ h1#heading {
 }
 
 .trans-background {
-    background-color: rgb(44, 46, 44, .8);
+    background-color: rgba(44, 46, 44, .8);
     border-radius: 25px;
 }
 
 .user-image {
-    width: 80px; /* Match the width specified in your HTML */
-    height: 80px; /* Make the height equal to the width to maintain a circle */
-    background-size: cover; /* Ensure the image covers the div without being stretched */
-    background-position: center; /* Center the image within the div */
-    border-radius: 50%; /* This creates the rounded circle effect */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
     margin: auto;
-  }
-  
+}
+
 @media only screen and (max-width: 600px) {
     .card {
         flex-direction: column;
     }
 
-    .col-md-4 {
+    .col-md-12 {
         width: 100%;
     }
 
     h1#heading {
         font-size: 1.5em;
+        padding: 10px;
     }
 
     #background {
-        padding: 50px;
+        padding: 10px;
     }
+}
+
+.container {
+    width: 80%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
